@@ -39,3 +39,7 @@ Once your translations are in place and compiled, you can use gettext("foo"); in
 ## Smarty
 
 In a Smarty template I am using this plugin - https://github.com/smarty-gettext/smarty-gettext - Just follow the instructions to install it and then wrap your strings in {t}foo{/t}. You will also need to add a locale setup at the top of your master template.
+
+## Cache
+
+Gettext creates new cache files whenever you modify the .po files. This can cause inconsistencies if you don't also restart apache after building the new .mo files.

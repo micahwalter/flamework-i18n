@@ -1,0 +1,5 @@
+{
+  "require" : {
+    "smarty-gettext/smarty-gettext": "~1.2.0"
+  }
+}

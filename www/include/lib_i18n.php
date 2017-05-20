@@ -78,7 +78,7 @@
     i18n_set_cookie($GLOBALS['cfg']['locale_cookie_name'], $locale);
 
     # 3. Save user pref
-    if ($GLOBALS['cfg']['user']['id']){
+    if ($GLOBALS['cfg']['user']['locale'] != $locale){
       $update = array(
         "locale" => $locale,
       );
